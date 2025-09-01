@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\FlightSearch;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,5 +23,8 @@ Route::view('dashboard', 'dashboard')
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
+
+
+Route::get('/flight-search', FlightSearch::class);    
 
 require __DIR__.'/auth.php';

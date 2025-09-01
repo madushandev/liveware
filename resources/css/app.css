@@ -1,6 +1,12 @@
+@import "../../node_modules/preline/variants.css";
+@import "flowbite/src/themes/default";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import "../../node_modules/preline/variants.css";
-@source "../../node_modules/preline/dist/*.js";
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
+@source "../../node_modules/flowbite-datepicker";
+
+
